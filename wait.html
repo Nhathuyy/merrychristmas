@@ -6,36 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico    ">
     <link rel="mask-icon" href="/img/Gradient-Vlog-YouTube-Icon-_1_.svg" color="#111">
-    <style>
-        @import url(https://fonts.googleapis.com/css?family=Khula:700);
-        body {
-            background: #111;
-        }
-        .hidden {
-            opacity: 0;
-        }
+  <style>
+    @import url(https://fonts.googleapis.com/css?family=Khula:700);
+    
+    body {
+        background: #111;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .hidden {
+        opacity: 0;
+    }
+    
+    .console-container {
+        font-family: Khula, sans-serif;
+        font-size: 4em;
+        text-align: center;
+        height: auto;
+        width: 90%;
+        max-width: 600px;
+        padding: 20px;
+        display: block;
+        position: absolute;
+        color: white;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-sizing: border-box;
+    }
+    
+    .console-underscore {
+        display: inline-block;
+        position: relative;
+        top: -0.14em;
+        left: 10px;
+    }
+    
+    @media (max-width: 768px) {
         .console-container {
-            font-family: Khula;
-            font-size: 4em;
-            text-align: center;
-            height: 200px;
-            width: 600px;
-            display: block;
-            position: absolute;
-            color: white;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            margin: auto;
+            font-size: 2.5em; /* Giảm kích thước chữ cho màn hình nhỏ */
+            width: 95%;
+            padding: 15px;
         }
+    }
+    
+    @media (max-width: 480px) {
+        .console-container {
+            font-size: 1.5em; /* Tiếp tục giảm kích thước chữ cho iPhone */
+            width: 100%;
+            padding: 10px;
+        }
+        
         .console-underscore {
-            display: inline-block;
-            position: relative;
-            top: -0.14em;
-            left: 10px;
+            left: 5px; /* Điều chỉnh khoảng cách giữa gạch chân */
         }
-    </style>
+    }
+</style>
+
 </head>
 <body>
     <div class='console-container'>
