@@ -103,7 +103,7 @@
                         target.setAttribute('style', 'color:' + colors[0])
                         letterCount += x;
                         waiting = false;
-                    }, 1500);
+                    }, 1700);
                 } else if (letterCount === words[0].length + 1 && waiting === false) {
                     waiting = true;
                     window.setTimeout(function() {
@@ -115,7 +115,7 @@
                     target.innerHTML = words[0].substring(0, letterCount);
                     letterCount += x;
                 }
-            }, 80);
+            }, 100);
 
             window.setInterval(function() {
                 if (visible === true) {
@@ -125,7 +125,7 @@
                     con.className = 'console-underscore';
                     visible = true;
                 }
-            }, 400);
+            }, 600);
         }
 
         // Start the greeting when the page loads
